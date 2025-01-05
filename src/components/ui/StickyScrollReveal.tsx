@@ -19,7 +19,7 @@ export const StickyScroll = ({
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: ref,
-    offset: ["start start", "end 50%"],
+    offset: ["start start", "end end"],
   });
   const cardLength = content.length;
 
@@ -88,7 +88,6 @@ export const StickyScroll = ({
               </motion.p>
             </div>
           ))}
-          <div className="h-40" />
         </div>
 
         <div
