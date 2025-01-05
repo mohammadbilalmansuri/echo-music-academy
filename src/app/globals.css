@@ -30,4 +30,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
 }
