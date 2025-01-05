@@ -6,7 +6,7 @@
     "description": "Start your musical journey with foundational piano skills taught by expert instructors.",
     "price": 109.99,
     "instructor": "Jane Smith",
-    "isFeatured": false,
+    "isFeatured": true,
     "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048427/musicacademy/piano.webp"
   },
   {
@@ -56,7 +56,7 @@
     "description": "Learn to improvise and express yourself on the saxophone with expert guidance.",
     "price": 139.99,
     "instructor": "David Lee",
-    "isFeatured": true,
+    "isFeatured": false,
     "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048427/musicacademy/sexophone.webp"
   },
   {
