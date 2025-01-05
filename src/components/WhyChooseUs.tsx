@@ -26,7 +26,7 @@ const musicSchoolContent = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="w-full relative flex flex-col items-center justify-center pt-28 pb-56">
+    <section className="w-full relative flex flex-col items-center justify-center pt-24 pb-48">
       <StickyScroll content={musicSchoolContent} />
     </section>
   );

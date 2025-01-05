@@ -37,7 +37,7 @@ const testimonials = [
 export default function Testimonials() {
   return (
     <section className="w-full relative flex flex-col items-center bg-dot-white/15">
-      <div className="w-full max-w-screen-2xl relative flex flex-col gap-16 items-center px-5 py-56">
+      <div className="w-full max-w-screen-2xl relative flex flex-col gap-16 items-center px-5 py-48">
         <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white text-xl md:text-3xl lg:text-6xl font-bold tracking-tight">
           Hear our Harmony: Voices of Success
         </h2>
