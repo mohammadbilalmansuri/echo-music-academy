@@ -8,19 +8,13 @@ import PrimaryButton from "./PrimaryButton";
 interface Course {
   id: number;
   title: string;
-  slug: string;
   description: string;
   image: string;
   price: number;
   instructor: string;
-  isFeatured: boolean;
 }
 
 export default function FeaturedCourses() {
-  const featuredCourses = courseData.filter(
-    (course: Course) => course.isFeatured
-  );
-
   return (
     <section className="w-full relative flex flex-col items-center">
       <div className="w-full max-w-screen-2xl relative flex flex-col items-center gap-20 px-4 py-24">
@@ -31,11 +25,14 @@ export default function FeaturedCourses() {
           </h2>
         </div>
         <div className="w-full grid grid-cols-3 gap-10 justify-center mb-5">
-          {featuredCourses.map((course: Course, index) => (
+          {courseData.map((course: Course, index) => (
             <BackgroundGradient
               key={index}
-              className="size-full flex flex-col items-center text-center gap-5 rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden p-8"
+              className="size-full flex flex-col gap-5 rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden p-8"
             >
+              <p className="text-white bg-black/75 absolute top-10 right-10 rounded-lg px-4 py-2">
+                {course.price} $
+              </p>
               <Image
                 src={course.image}
                 alt={course.title}
@@ -46,11 +43,12 @@ export default function FeaturedCourses() {
               />
               <h4 className="text-xl font-medium text-white">{course.title}</h4>
               <p className="-mt-2 text-white/60">{course.description}</p>
-              <Link href={`/courses/${course.slug}`}>Learn More</Link>
+              <p className="underline text-white/60">
+                Instructure: {course.instructor}
+              </p>
             </BackgroundGradient>
           ))}
         </div>
-        <PrimaryButton href="/courses">View All Courses</PrimaryButton>
       </div>
     </section>
   );
