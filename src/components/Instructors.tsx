@@ -2,7 +2,7 @@
 import { AnimatedTooltip } from "./ui/AnimatedTooltip";
 import { WavyBackground } from "./ui/WavyBackground";
 
-const people = [
+const instructors = [
   {
     name: "John Smith",
     designation: "Piano Expert",
@@ -56,7 +56,7 @@ export default function Instructors() {
         </div>
 
         <div className="flex items-center">
-          <AnimatedTooltip items={people} />
+          <AnimatedTooltip items={instructors} />
         </div>
       </WavyBackground>
     </section>
