@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "Piano for Beginners",
+    "slug": "piano-for-beginners",
+    "description": "Start your musical journey with foundational piano skills taught by expert instructors.",
+    "price": 109.99,
+    "instructor": "Jane Smith",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048427/musicacademy/piano.webp"
+  },
+  {
+    "id": 2,
+    "title": "Guitar Essentials",
+    "slug": "guitar-essentials",
+    "description": "Learn the basics of guitar playing, including chords, strumming, and simple songs.",
+    "price": 99.99,
+    "instructor": "John Doe",
+    "isFeatured": true,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/guitar.webp"
+  },
+  {
+    "id": 3,
+    "title": "Violin Mastery",
+    "slug": "violin-mastery",
+    "description": "Master the violin with advanced techniques and repertoire for intermediate players.",
+    "price": 129.99,
+    "instructor": "Emily Davis",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048427/musicacademy/violin.webp"
+  },
+  {
+    "id": 4,
+    "title": "Drumming Fundamentals",
+    "slug": "drumming-fundamentals",
+    "description": "Develop your rhythm and timing with comprehensive drum lessons for all levels.",
+    "price": 89.99,
+    "instructor": "Michael Brown",
+    "isFeatured": true,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/drum.webp"
+  },
+  {
+    "id": 5,
+    "title": "Flute Techniques",
+    "slug": "flute-techniques",
+    "description": "Enhance your flute playing skills with lessons on breath control and articulation.",
+    "price": 119.99,
+    "instructor": "Sophia Wilson",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/flute.webp"
+  },
+  {
+    "id": 6,
+    "title": "Saxophone Improvisation",
+    "slug": "saxophone-improvisation",
+    "description": "Learn to improvise and express yourself on the saxophone with expert guidance.",
+    "price": 139.99,
+    "instructor": "David Lee",
+    "isFeatured": true,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048427/musicacademy/sexophone.webp"
+  },
+  {
+    "id": 7,
+    "title": "Trumpet Basics",
+    "slug": "trumpet-basics",
+    "description": "Get started with trumpet playing, covering essential techniques and simple melodies.",
+    "price": 79.99,
+    "instructor": "Chris Johnson",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/trumpet.webp"
+  },
+  {
+    "id": 8,
+    "title": "Cello for Beginners",
+    "slug": "cello-for-beginners",
+    "description": "Begin your cello journey with lessons on posture, bowing, and basic repertoire.",
+    "price": 119.99,
+    "instructor": "Olivia Martinez",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/cello.webp"
+  },
+  {
+    "id": 9,
+    "title": "Clarinet Essentials",
+    "slug": "clarinet-essentials",
+    "description": "Learn the fundamentals of clarinet playing, including tone production and fingerings.",
+    "price": 89.99,
+    "instructor": "Liam Anderson",
+    "isFeatured": false,
+    "image": "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1736048426/musicacademy/clarinet.webp"
+  }
+]
