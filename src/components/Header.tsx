@@ -4,7 +4,7 @@ import { HoveredLink, Menu, MenuItem } from "./ui/NavbarMenu";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 
-function Header({ className }: { className?: string }) {
+export default function Header({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
     <header
@@ -28,10 +28,8 @@ function Header({ className }: { className?: string }) {
           </MenuItem>
         </Link>
 
-        <HoveredLink href="#contact">Contact Us</HoveredLink>
+        <HoveredLink href="#contact-us">Contact Us</HoveredLink>
       </Menu>
     </header>
   );
 }
-
-export default Header;
