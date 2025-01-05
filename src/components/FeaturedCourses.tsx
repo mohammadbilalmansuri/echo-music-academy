@@ -20,7 +20,7 @@ export default function FeaturedCourses() {
       id="courses"
       className="w-full relative flex flex-col items-center"
     >
-      <div className="w-full max-w-screen-2xl relative flex flex-col items-center gap-20 px-4 py-28">
+      <div className="w-full max-w-screen-2xl relative flex flex-col items-center gap-20 px-4 py-24">
         <div className="flex flex-col items-center gap-5">
           <p className="text-2xl text-white/60">Featured Courses</p>
           <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white text-xl md:text-3xl lg:text-6xl font-bold tracking-tight">
