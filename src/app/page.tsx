@@ -1,5 +1,6 @@
 import FeaturedCourses from "@/components/FeaturedCourses";
 import Hero from "@/components/Hero";
+import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <FeaturedCourses />
       <WhyChooseUs />
+      <Testimonials />
       <div className="h-screen"></div>
     </main>
   );
