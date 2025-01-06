@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Button } from "./ui/MovingBorder";
+import { Button } from "./ui/moving-border";
 
 interface PrimaryButtonProps {
   children: React.ReactNode;
