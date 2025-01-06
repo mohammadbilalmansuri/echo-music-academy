@@ -1,4 +1,4 @@
-import { HoverEffect } from "./ui/CardHoverEffct";
+import { HoverEffect } from "./ui/card-hover-effect";
 
 const webinars = [
   {

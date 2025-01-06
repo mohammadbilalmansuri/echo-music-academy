@@ -1,6 +1,6 @@
 "use client";
-import { Spotlight } from "./ui/Spotlight";
-import { BackgroundLines } from "@/components/ui/BackgroundLines";
+import { Spotlight } from "./ui/spotlight-effect";
+import { BackgroundLines } from "./ui/background-lines";
 import PrimaryButton from "./PrimaryButton";
 
 export default function Hero() {

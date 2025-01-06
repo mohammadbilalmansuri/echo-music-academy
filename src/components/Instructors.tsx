@@ -1,6 +1,6 @@
 "use client";
-import { AnimatedTooltip } from "./ui/AnimatedTooltip";
-import { WavyBackground } from "./ui/WavyBackground";
+import { AnimatedTooltip } from "./ui/animated-tooltip";
+import { WavyBackground } from "./ui/wavy-background";
 
 const instructors = [
   {
