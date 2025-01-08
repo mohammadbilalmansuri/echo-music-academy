@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="w-full max-w-screen-2xl relative flex flex-col items-center text-center gap-10 px-5 pt-24 pb-8">
         <div className="flex flex-col items-center gap-5">
           <h2 className="text-3xl font-medium">About Us</h2>
-          <p className="text-lg text-white/60 max-w-3xl">
-            Music School is a premier institution dedicated to teaching the art
-            and science of music. We nurture talent from the ground up,
-            fostering a vibrant community of musicians.
+          <p className="text-lg text-white/60 max-w-2xl">
+            Echo is a premier institution dedicated to teaching the art and
+            science of music. We nurture talent from the ground up, fostering a
+            vibrant community of musicians.
           </p>
 
           <div className="flex items-center gap-3 mt-3">
@@ -66,8 +66,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="text-white/60 border-t border-white/20 pt-6">
-          © 2024 Music School. All rights reserved.
+        <p className="text-white/60 border-t border-white/20 pt-7">
+          © 2024 Echo Music Academy. All rights reserved.
         </p>
       </div>
     </footer>

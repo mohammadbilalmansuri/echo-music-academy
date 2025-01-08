@@ -15,8 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Academy Of Music",
-  description: "Master the art of music",
+  title: "Echo - Master the art of music",
+  description:
+    "Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.",
 };
 
 export default function RootLayout({
