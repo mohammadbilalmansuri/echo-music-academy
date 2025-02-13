@@ -9,7 +9,7 @@ export default function Header({ className }: { className?: string }) {
   return (
     <header
       className={cn(
-        "w-full flex flex-col justify-center items-center fixed top-0 z-50 p-5",
+        "w-full flex flex-col justify-center items-center fixed top-0 z-50 py-5 px-3",
         className
       )}
     >
