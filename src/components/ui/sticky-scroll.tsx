@@ -4,7 +4,7 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import { cn } from "@/utils/cn";
 
-export const StickyScroll = ({
+const StickyScroll = ({
   content,
   contentClassName,
 }: {
@@ -22,8 +22,10 @@ export const StickyScroll = ({
     offset: ["start start", "end end"],
   });
   const cardLength = content.length;
+  const isLargeScreen = window.innerWidth >= 1024;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
+    if (!isLargeScreen) return;
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
@@ -54,24 +56,24 @@ export const StickyScroll = ({
 
   return (
     <div
-      className="scrollbar-hidden w-full relative flex flex-col items-center h-[30rem] overflow-y-scroll"
+      className="scrollbar-hidden w-full relative flex flex-col items-center xl:h-[30rem] lg:h-[26rem] overflow-y-scroll"
       ref={ref}
     >
       <div className="w-full max-w-screen-2xl flex justify-between gap-20 px-5">
-        <div className="relative w-1/2 flex flex-col items-start">
+        <div className="relative lg:w-1/2 w-full flex flex-col items-start lg:gap-0 md:gap-12 gap-8">
           {content.map((item, index) => (
             <div
               key={item.title + index}
-              className="min-h-[30rem] flex flex-col justify-center gap-10"
+              className="xl:min-h-[30rem] lg:min-h-[26rem] flex flex-col justify-center lg:gap-10 md:gap-6 gap-4"
             >
               <motion.h2
                 initial={{
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: isLargeScreen ? (activeCard === index ? 1 : 0.3) : 1,
                 }}
-                className="leading-tight text-4xl font-bold text-white"
+                className="leading-tight xl:text-4xl lg:text-3xl md:text-2xl xs:text-xl text-lg font-bold text-white"
               >
                 {item.title}
               </motion.h2>
@@ -80,9 +82,9 @@ export const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: activeCard === index ? 1 : 0.3,
+                  opacity: isLargeScreen ? (activeCard === index ? 1 : 0.3) : 1,
                 }}
-                className="text-lg text-white/60"
+                className="md:text-lg text-white/60"
               >
                 {item.description}
               </motion.p>
@@ -93,7 +95,7 @@ export const StickyScroll = ({
         <div
           style={{ background: backgroundGradient }}
           className={cn(
-            "hidden lg:block w-1/2 h-[30rem] rounded-xl bg-white sticky top-0 overflow-hidden",
+            "hidden lg:block w-1/2 xl:h-[30rem] h-[26rem] rounded-xl bg-white sticky top-0 overflow-hidden",
             contentClassName
           )}
         >
@@ -103,3 +105,5 @@ export const StickyScroll = ({
     </div>
   );
 };
+
+export default StickyScroll;
