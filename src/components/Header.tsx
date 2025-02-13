@@ -15,19 +15,16 @@ export default function Header({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
         <HoveredLink href="/">Home</HoveredLink>
-        <Link href="#courses">
-          <MenuItem setActive={setActive} active={active} item="Our Courses">
-            <div className="flex flex-col space-y-4 text-sm">
-              <HoveredLink href="#courses">Piano for Beginners</HoveredLink>
-              <HoveredLink href="#courses">Guitar Essentials</HoveredLink>
-              <HoveredLink href="#courses">Violin Mastery</HoveredLink>
-              <HoveredLink href="#courses">Drumming Fundamentals</HoveredLink>
-              <HoveredLink href="#courses">Flute Techniques</HoveredLink>
-              <HoveredLink href="#courses">Clarinet Essentials</HoveredLink>
-            </div>
-          </MenuItem>
-        </Link>
-
+        <MenuItem setActive={setActive} active={active} item="Our Courses">
+          <div className="flex flex-col space-y-4 text-sm">
+            <HoveredLink href="#courses">Piano for Beginners</HoveredLink>
+            <HoveredLink href="#courses">Guitar Essentials</HoveredLink>
+            <HoveredLink href="#courses">Violin Mastery</HoveredLink>
+            <HoveredLink href="#courses">Drumming Fundamentals</HoveredLink>
+            <HoveredLink href="#courses">Flute Techniques</HoveredLink>
+            <HoveredLink href="#courses">Clarinet Essentials</HoveredLink>
+          </div>
+        </MenuItem>
         <HoveredLink href="#contact-us">Contact Us</HoveredLink>
       </Menu>
     </header>
