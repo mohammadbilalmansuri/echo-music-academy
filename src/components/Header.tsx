@@ -2,9 +2,8 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
-import Link from "next/link";
 
-export default function Header({ className }: { className?: string }) {
+const Header = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
   return (
     <header
@@ -29,4 +28,6 @@ export default function Header({ className }: { className?: string }) {
       </Menu>
     </header>
   );
-}
+};
+
+export default Header;
