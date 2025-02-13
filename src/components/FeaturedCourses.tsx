@@ -79,7 +79,7 @@ const FeaturedCourses = () => {
           </h2>
         </div>
 
-        <div className="w-full grid lg:grid-cols-3 xs:grid-cols-2 xl:gap-8 lg:gap-7 md:gap-6 sm:gap-5 gap-4 justify-center">
+        <div className="w-full grid lg:grid-cols-3 xs:grid-cols-2 grid-cols-1 xl:gap-8 lg:gap-7 md:gap-6 sm:gap-5 gap-4 justify-center">
           {courses.map((course, index) => (
             <BackgroundGradient
               key={index}
