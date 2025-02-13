@@ -1,6 +1,6 @@
 "use client";
-import { AnimatedTooltip } from "./ui/animated-tooltip";
-import { WavyBackground } from "./ui/wavy-background";
+import AnimatedTooltip from "./ui/animated-tooltip";
+import WavyBackground from "./ui/wavy-background";
 
 const instructors = [
   {
@@ -44,12 +44,12 @@ const instructors = [
 export default function Instructors() {
   return (
     <section className="w-full relative overflow-hidden">
-      <WavyBackground className="w-full relative flex flex-col items-center justify-center gap-10 px-5 py-24">
-        <div className="flex flex-col items-center gap-5">
-          <h2 className="bg-clip-text text-transparent text-center bg-white text-xl md:text-3xl lg:text-6xl font-bold tracking-tight">
+      <WavyBackground className="w-full relative flex flex-col items-center justify-center md:gap-10 gap-8 px-5 lg:py-24 md:py-20 py-16">
+        <div className="flex flex-col items-center lg:gap-5 sm:gap-4 gap-3 text-center">
+          <h2 className="bg-clip-text text-transparent text-center bg-white xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl text-2xl font-bold tracking-tight">
             Meet Our Instructors
           </h2>
-          <p className="text-2xl">
+          <p className="lg:text-2xl md:text-xl text-lg lg:max-w-lg sm:max-w-sm max-w-xs leading-snug">
             Discover the talented professionals who will guide your musical
             journey
           </p>

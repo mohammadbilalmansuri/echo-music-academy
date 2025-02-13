@@ -13,7 +13,7 @@ const Header = ({ className }: { className?: string }) => {
       )}
     >
       <Menu setActive={setActive}>
-        <HoveredLink href="/">Home</HoveredLink>
+        <HoveredLink href="#hero">Home</HoveredLink>
         <MenuItem setActive={setActive} active={active} item="Our Courses">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="#courses">Piano for Beginners</HoveredLink>

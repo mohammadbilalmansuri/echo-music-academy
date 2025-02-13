@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
 
-export const HoverEffect = ({
+const HoverEffect = ({
   items,
   className,
 }: {
@@ -20,7 +20,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "w-full relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3",
+        "w-full relative grid lg:grid-cols-3 xs:grid-cols-2 grid-cols-1",
         className
       )}
     >
@@ -28,7 +28,7 @@ export const HoverEffect = ({
         <Link
           key={idx}
           href={item.link}
-          className="relative group h-full w-full p-2.5"
+          className="relative group h-full w-full sm:p-2.5 p-2"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -49,8 +49,10 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <div className="p-8 border border-white/20 hover:border-white/30 rounded-3xl transition-all duration-200 group-hover:border-white/60 size-full bg-black relative z-20 flex flex-col gap-5">
-            <h3 className="text-xl font-medium text-white/80">{item.title}</h3>
+          <div className="sm:p-8 p-5 border border-white/20 hover:border-white/30 rounded-2xl transition-all duration-200 group-hover:border-white/60 size-full bg-black relative z-20 flex flex-col md:gap-5 sm:gap-4 xs:gap-3 gap-2">
+            <h3 className="md:text-xl text-lg font-medium text-white/80">
+              {item.title}
+            </h3>
             <p className="text-white/60">{item.description}</p>
           </div>
         </Link>
@@ -58,3 +60,5 @@ export const HoverEffect = ({
     </div>
   );
 };
+
+export default HoverEffect;
