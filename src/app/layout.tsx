@@ -18,6 +18,22 @@ export const metadata: Metadata = {
   title: "Echo - Master the art of music",
   description:
     "Dive into our comprehensive music courses and transform your musical journey today. Whether you're a beginner or looking to refine your skills, join us to unlock your true potential.",
+  authors: {
+    name: "Mohammad Bilal Mansuri",
+    url: "https://www.linkedin.com/in/mohammadbilalmansuri",
+  },
+  keywords: [
+    "music",
+    "echo",
+    "learn music",
+    "music courses",
+    "echo music",
+    "music learning",
+    "music education",
+    "echo music academy",
+    "music academy",
+    "music school",
+  ],
 };
 
 export default function RootLayout({
