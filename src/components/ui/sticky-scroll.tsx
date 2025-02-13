@@ -22,10 +22,23 @@ const StickyScroll = ({
     offset: ["start start", "end end"],
   });
   const cardLength = content.length;
-  const isLargeScreen = window.innerWidth >= 1024;
+  const [isWideScreen, setIsWideScreen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mediaQuery = window.matchMedia("(min-width: 1024px)");
+    setIsWideScreen(mediaQuery.matches);
+    const handleMediaQueryChange = (event: MediaQueryListEvent) =>
+      setIsWideScreen(event.matches);
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    if (!isLargeScreen) return;
+    if (!isWideScreen) return;
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
@@ -71,7 +84,7 @@ const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: isLargeScreen ? (activeCard === index ? 1 : 0.3) : 1,
+                  opacity: isWideScreen ? (activeCard === index ? 1 : 0.3) : 1,
                 }}
                 className="leading-tight xl:text-4xl lg:text-3xl md:text-2xl xs:text-xl text-lg font-bold text-white"
               >
@@ -82,7 +95,7 @@ const StickyScroll = ({
                   opacity: 0,
                 }}
                 animate={{
-                  opacity: isLargeScreen ? (activeCard === index ? 1 : 0.3) : 1,
+                  opacity: isWideScreen ? (activeCard === index ? 1 : 0.3) : 1,
                 }}
                 className="md:text-lg text-white/60"
               >
