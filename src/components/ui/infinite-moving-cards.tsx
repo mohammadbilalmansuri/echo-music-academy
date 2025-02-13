@@ -25,6 +25,7 @@ export const InfiniteMovingCards = ({
   useEffect(() => {
     addAnimation();
   }, []);
+
   const [start, setStart] = useState(false);
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
@@ -42,6 +43,7 @@ export const InfiniteMovingCards = ({
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -57,6 +59,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -68,6 +71,7 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   return (
     <div
       ref={containerRef}
@@ -79,21 +83,23 @@ export const InfiniteMovingCards = ({
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex shrink-0 gap-5 w-max flex-nowrap",
+          "flex shrink-0 sm:gap-5 gap-4 w-max flex-nowrap",
           start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item, idx) => (
           <li
-            className="w-full max-w-md relative flex flex-col gap-5 justify-between rounded-2xl border border-white/40 p-8 bg-gradient-to-tr from-white/10 to-white/20"
+            className="w-full sm:max-w-md max-w-xs relative flex flex-col sm:gap-5 gap-4 justify-between rounded-2xl border border-white/40 xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 bg-gradient-to-tr from-white/10 to-white/20"
             key={item.name}
           >
-            <p className="text-lg italic text-white/60">"{item.quote}"</p>
+            <p className="md:text-lg italic text-white/60">"{item.quote}"</p>
 
             <div className="w-full relative">
-              <h5 className="text-lg text-white/80 font-medium">{item.name}</h5>
-              <p className="text-white/40">{item.title}</p>
+              <h5 className="ms:text-lg text-white/80 font-medium">
+                {item.name}
+              </h5>
+              <p className="md:text-base text-sm text-white/40">{item.title}</p>
             </div>
           </li>
         ))}
