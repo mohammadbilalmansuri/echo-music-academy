@@ -74,7 +74,7 @@ const FeaturedCourses = () => {
       <div className="w-full max-w-screen-2xl relative flex flex-col items-center xl:px-8 lg:px-7 md:px-6 sm:px-5 px-4 lg:py-24 md:py-20 py-16 xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 gap-10">
         <div className="flex flex-col items-center md:gap-5 sm:gap-4 gap-3">
           <p className="md:text-2xl text-xl text-white/60">Featured Courses</p>
-          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-7xl lg:text-6xl md:text-5xl xs:text-4xl text-3xl font-bold tracking-tight">
+          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-6xl lg:text-5xl md:text-6xl xs:text-3xl text-2xl font-bold tracking-tight">
             Learn with the best
           </h2>
         </div>
