@@ -72,9 +72,11 @@ const FeaturedCourses = () => {
       className="w-full relative flex flex-col items-center"
     >
       <div className="w-full max-w-screen-2xl relative flex flex-col items-center xl:px-8 lg:px-7 md:px-6 sm:px-5 px-4 lg:py-24 md:py-20 py-16 xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 gap-10">
-        <div className="flex flex-col items-center md:gap-5 sm:gap-4 gap-3">
-          <p className="md:text-2xl text-xl text-white/60">Featured Courses</p>
-          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-6xl lg:text-5xl md:text-6xl xs:text-3xl text-2xl font-bold tracking-tight">
+        <div className="flex flex-col items-center lg:gap-5 md:gap-4 sm:gap-3 gap-2">
+          <p className="lg:text-2xl md:text-xl sm:text-lg text-base text-white/60">
+            Featured Courses
+          </p>
+          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-6xl lg:text-5xl md:text-4xl xs:text-3xl text-2xl font-bold tracking-tight">
             Learn with the best
           </h2>
         </div>
@@ -83,7 +85,7 @@ const FeaturedCourses = () => {
           {courses.map((course, index) => (
             <BackgroundGradient
               key={index}
-              className="size-full flex flex-col items-start sm:gap-5 gap-4 rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 relative"
+              className="size-full flex flex-col items-start sm:gap-5 gap-4 rounded-2xl bg-white dark:bg-zinc-900 overflow-hidden xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 relative"
             >
               <p className="text-white bg-black/75 absolute lg:top-10 lg:right-10 xs:top-8 xs:right-8 right-6 top-6 rounded-lg px-3 py-2">
                 {course.price} $

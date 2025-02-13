@@ -2,7 +2,7 @@
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
 
-export const InfiniteMovingCards = ({
+const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "fast",
@@ -90,7 +90,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-full sm:max-w-md max-w-xs relative flex flex-col sm:gap-5 gap-4 justify-between rounded-2xl border border-white/40 xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 bg-gradient-to-tr from-white/10 to-white/20"
+            className="w-full xl:max-w-md md:max-w-sm xs:max-w-xs max-w-[250px] relative flex flex-col sm:gap-5 gap-4 justify-between rounded-2xl border border-white/40 xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 bg-gradient-to-tr from-white/10 to-white/20"
             key={item.name}
           >
             <p className="md:text-lg italic text-white/60">"{item.quote}"</p>
@@ -107,3 +107,5 @@ export const InfiniteMovingCards = ({
     </div>
   );
 };
+
+export default InfiniteMovingCards;

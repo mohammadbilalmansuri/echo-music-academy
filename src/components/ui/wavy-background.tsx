@@ -3,7 +3,7 @@ import { cn } from "@/utils/cn";
 import React, { useEffect, useRef, useState } from "react";
 import { createNoise3D } from "simplex-noise";
 
-export const WavyBackground = ({
+const WavyBackground = ({
   children,
   className,
   containerClassName,
@@ -130,3 +130,5 @@ export const WavyBackground = ({
     </div>
   );
 };
+
+export default WavyBackground;

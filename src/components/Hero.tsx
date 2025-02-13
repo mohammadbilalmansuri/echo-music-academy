@@ -5,7 +5,10 @@ import PrimaryButton from "./PrimaryButton";
 
 const Hero = () => {
   return (
-    <section className="w-full h-dvh relative flex flex-col items-center">
+    <section
+      id="hero"
+      className="w-full h-dvh relative flex flex-col items-center"
+    >
       <Spotlight className="-top-56 -left-40" fill="white" />
       <BackgroundLines className="flex items-center justify-center size-full flex-col px-5 lg:gap-10 gap-8 lg:py-24 md:py-20 py-16">
         <h1 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-7xl lg:text-6xl md:text-5xl xs:text-4xl text-3xl font-bold tracking-tight relative z-10">
