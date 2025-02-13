@@ -1,13 +1,11 @@
 import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
-import colors from "tailwindcss/colors";
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
 import svgToDataUri from "mini-svg-data-uri";
 
 // Plugin to add each Tailwind color as a global CSS variable
-function addVariablesForColors({ addBase, theme }: any) {
+const addVariablesForColors = ({ addBase, theme }: any) => {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
@@ -16,9 +14,9 @@ function addVariablesForColors({ addBase, theme }: any) {
   addBase({
     ":root": newVars,
   });
-}
+};
 
-function addSvgPattern({ matchUtilities, theme }: any) {
+const addSvgPattern = ({ matchUtilities, theme }: any) => {
   matchUtilities(
     {
       "bg-grid-small": (value: any) => ({
@@ -34,7 +32,7 @@ function addSvgPattern({ matchUtilities, theme }: any) {
     },
     { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
   );
-}
+};
 
 export default {
   content: [
@@ -45,6 +43,7 @@ export default {
   theme: {
     extend: {
       screens: {
+        xs: "480px",
         "2xl": "1440px",
       },
       colors: {
