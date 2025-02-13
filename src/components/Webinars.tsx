@@ -1,3 +1,4 @@
+"use client";
 import { HoverEffect } from "./ui/card-hover-effect";
 
 const webinars = [
