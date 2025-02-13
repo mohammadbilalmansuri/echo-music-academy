@@ -65,27 +65,27 @@ const courses = [
   },
 ];
 
-export default function FeaturedCourses() {
+const FeaturedCourses = () => {
   return (
     <section
       id="courses"
       className="w-full relative flex flex-col items-center"
     >
-      <div className="w-full max-w-screen-2xl relative flex flex-col items-center gap-20 px-4 py-24">
-        <div className="flex flex-col items-center gap-5">
-          <p className="text-2xl text-white/60">Featured Courses</p>
-          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white text-xl md:text-3xl lg:text-6xl font-bold tracking-tight">
+      <div className="w-full max-w-screen-2xl relative flex flex-col items-center xl:px-8 lg:px-7 md:px-6 sm:px-5 px-4 lg:py-24 md:py-20 py-16 xl:gap-20 lg:gap-16 md:gap-14 sm:gap-12 gap-10">
+        <div className="flex flex-col items-center md:gap-5 sm:gap-4 gap-3">
+          <p className="md:text-2xl text-xl text-white/60">Featured Courses</p>
+          <h2 className="bg-clip-text text-transparent text-center bg-gradient-to-b from-white/40 to-white xl:text-7xl lg:text-6xl md:text-5xl xs:text-4xl text-3xl font-bold tracking-tight">
             Learn with the best
           </h2>
         </div>
 
-        <div className="w-full grid grid-cols-3 gap-8 justify-center">
+        <div className="w-full grid lg:grid-cols-3 xs:grid-cols-2 xl:gap-8 lg:gap-7 md:gap-6 sm:gap-5 gap-4 justify-center">
           {courses.map((course, index) => (
             <BackgroundGradient
               key={index}
-              className="size-full flex flex-col items-start gap-5 rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden p-8"
+              className="size-full flex flex-col items-start sm:gap-5 gap-4 rounded-[22px] bg-white dark:bg-zinc-900 overflow-hidden xl:p-8 lg:p-7 md:p-6 sm:p-5 p-4 relative"
             >
-              <p className="text-white bg-black/75 absolute top-10 right-10 rounded-lg px-3 py-2">
+              <p className="text-white bg-black/75 absolute lg:top-10 lg:right-10 xs:top-8 xs:right-8 right-6 top-6 rounded-lg px-3 py-2">
                 {course.price} $
               </p>
               <Image
@@ -96,9 +96,13 @@ export default function FeaturedCourses() {
                 className="rounded-xl aspect-video object-cover object-center"
                 style={{ width: "100%", height: "auto" }}
               />
-              <h4 className="text-xl font-medium text-white">{course.title}</h4>
-              <p className="-mt-2 text-white/60">{course.description}</p>
-              <p className="-mt-2 text-white/60 border-b border-b-white/30">
+              <h4 className="md:text-xl text-lg font-medium text-white">
+                {course.title}
+              </h4>
+              <p className="-mt-2 md:text-base text-sm text-white/60">
+                {course.description}
+              </p>
+              <p className="-mt-2 md:text-base text-sm text-white/60 border-b border-b-white/30">
                 Instructor: {course.instructor}
               </p>
             </BackgroundGradient>
@@ -107,4 +111,6 @@ export default function FeaturedCourses() {
       </div>
     </section>
   );
-}
+};
+
+export default FeaturedCourses;
