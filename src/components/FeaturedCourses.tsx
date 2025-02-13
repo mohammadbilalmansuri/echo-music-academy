@@ -1,5 +1,5 @@
 "use client";
-import { BackgroundGradient } from "./ui/background-gradient";
+import BackgroundGradient from "./ui/background-gradient";
 import Image from "next/image";
 
 const courses = [
