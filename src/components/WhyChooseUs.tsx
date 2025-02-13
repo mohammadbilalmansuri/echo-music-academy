@@ -1,5 +1,5 @@
 "use client";
-import { StickyScroll } from "./ui/sticky-scroll";
+import StickyScroll from "./ui/sticky-scroll";
 
 const musicSchoolContent = [
   {
@@ -24,10 +24,12 @@ const musicSchoolContent = [
   },
 ];
 
-export default function WhyChooseUs() {
+const WhyChooseUs = () => {
   return (
-    <section className="w-full relative flex flex-col items-center justify-center pt-24 pb-48">
+    <section className="w-full relative flex flex-col items-center justify-center lg:pt-24 md:pt-20 pt-16 lg:pb-48 md:pb-40 pb-32">
       <StickyScroll content={musicSchoolContent} />
     </section>
   );
-}
+};
+
+export default WhyChooseUs;
