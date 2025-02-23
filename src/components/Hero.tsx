@@ -16,8 +16,8 @@ const Hero = () => {
         </h1>
         <p className="md:max-w-xl max-w-lg text-base md:text-lg text-white/60 text-center relative z-10 pb-2">
           Dive into our comprehensive music courses and transform your musical
-          journey today. Whether you're a beginner or looking to refine your
-          skills, join us to unlock your true potential.
+          journey today. Whether you&apos;re a beginner or looking to refine
+          your skills, join us to unlock your true potential.
         </p>
 
         <PrimaryButton href="#courses">Explore Courses</PrimaryButton>
