@@ -11,7 +11,7 @@ const courses = [
     price: 109.99,
     instructor: "Jane Smith",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429426/echo/piano.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/piano.webp",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const courses = [
     price: 99.99,
     instructor: "John Doe",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429424/echo/guitar.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272291/echomusicacademy/guitar.webp",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const courses = [
     price: 129.99,
     instructor: "Emily Davis",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429426/echo/violin.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/violin.webp",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const courses = [
     price: 89.99,
     instructor: "Michael Brown",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/drum.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272291/echomusicacademy/drum.webp",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const courses = [
     price: 119.99,
     instructor: "Sophia Wilson",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/flute.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/flute.webp",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const courses = [
     price: 89.99,
     instructor: "Liam Anderson",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429424/echo/clarinet.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272291/echomusicacademy/clarinet.webp",
   },
 ];
 
