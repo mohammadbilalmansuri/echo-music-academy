@@ -34,6 +34,13 @@ export const metadata: Metadata = {
     "music academy",
     "music school",
   ],
+  icons: [
+    {
+      url: "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740273142/echomusicacademy/favicon.svg",
+      rel: "icon",
+      type: "image/svg+xml",
+    },
+  ],
 };
 
 export default function RootLayout({
