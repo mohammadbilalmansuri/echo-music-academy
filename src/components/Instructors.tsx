@@ -7,37 +7,37 @@ const instructors = [
     name: "John Smith",
     designation: "Piano Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/john-smith.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/john-smith.webp",
   },
   {
     name: "John Doe",
     designation: "Guitar Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/john-doe.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272291/echomusicacademy/john-doe.webp",
   },
   {
     name: "Emily Davis",
     designation: "Violin Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/emily-davis.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272291/echomusicacademy/emily-davis.webp",
   },
   {
     name: "Michael Brown",
     designation: "Drum Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/mitchel-brown.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/mitchel-brown.webp",
   },
   {
     name: "Sophia Wilson",
     designation: "Flute Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429427/echo/sophia-wilson.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/sophia-wilson.webp",
   },
   {
     name: "Liam Anderson",
     designation: "Clarinet Expert",
     image:
-      "https://res.cloudinary.com/samaxy/image/upload/v1739429425/echo/liam-anderson.webp",
+      "https://res.cloudinary.com/mohammadbilalmansuri/image/upload/v1740272292/echomusicacademy/liam-anderson.webp",
   },
 ];
 
