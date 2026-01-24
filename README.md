@@ -8,6 +8,6 @@ This project focuses on integrating **Aceternity UI components** and customizing
 
 ## Technologies Used
 
-- **Next.js** with **TypeScript**
-- **Aceternity UI**
-- **Tailwind CSS**
+- Next.js with TypeScript
+- Aceternity UI
+- Tailwind CSS
