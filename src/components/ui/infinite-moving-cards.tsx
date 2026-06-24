@@ -28,7 +28,7 @@ const InfiniteMovingCards = ({
     if (containerRef.current) {
       containerRef.current.style.setProperty(
         "--animation-direction",
-        direction === "left" ? "forwards" : "reverse"
+        direction === "left" ? "forwards" : "reverse",
       );
     }
   }, [direction]);
@@ -68,7 +68,7 @@ const InfiniteMovingCards = ({
       ref={containerRef}
       className={cn(
         "scroller relative z-20 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-        className
+        className,
       )}
     >
       <ul
@@ -76,7 +76,7 @@ const InfiniteMovingCards = ({
         className={cn(
           "flex shrink-0 sm:gap-5 gap-4 w-max flex-nowrap",
           start && "animate-scroll",
-          pauseOnHover && "hover:[animation-play-state:paused]"
+          pauseOnHover && "hover:[animation-play-state:paused]",
         )}
       >
         {items.map((item) => (

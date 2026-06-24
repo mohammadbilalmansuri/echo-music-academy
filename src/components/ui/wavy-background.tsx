@@ -42,12 +42,12 @@ const WavyBackground = ({
 
   const getSpeed = useCallback(
     (): number => (speed === "slow" ? 0.001 : 0.002),
-    [speed]
+    [speed],
   );
 
   const waveColors = useMemo(
     () => colors ?? ["#38bdf8", "#818cf8", "#c084fc", "#e879f9", "#22d3ee"],
-    [colors]
+    [colors],
   );
 
   const drawWave = useCallback(
@@ -69,7 +69,7 @@ const WavyBackground = ({
         ctxRef.current.closePath();
       }
     },
-    [getSpeed, waveWidth, waveColors, noise]
+    [getSpeed, waveWidth, waveColors, noise],
   );
 
   const render = useCallback((): void => {
@@ -119,7 +119,7 @@ const WavyBackground = ({
     setIsSafari(
       typeof window !== "undefined" &&
         navigator.userAgent.includes("Safari") &&
-        !navigator.userAgent.includes("Chrome")
+        !navigator.userAgent.includes("Chrome"),
     );
   }, []);
 
@@ -127,7 +127,7 @@ const WavyBackground = ({
     <div
       className={cn(
         "h-dvh flex flex-col items-center justify-center",
-        containerClassName
+        containerClassName,
       )}
     >
       <canvas

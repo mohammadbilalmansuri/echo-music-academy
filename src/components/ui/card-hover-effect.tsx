@@ -21,7 +21,7 @@ const HoverEffect = ({
     <div
       className={cn(
         "w-full relative grid lg:grid-cols-3 xs:grid-cols-2 grid-cols-1",
-        className
+        className,
       )}
     >
       {items.map((item, idx) => (
